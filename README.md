@@ -31,11 +31,10 @@ Resnet on CIFAR10 Image dataset
 
 ## Directory
 
-![](DirectoryStructure.PNG)
+![](images/DirectoryStructure.PNG)
 
 ## Training 
-Run [Inference Notebook file](InferenceNotebook.ipynb)
-Use ![Training Notebook](modelTraining/Resnet_Training.ipynb) and ![Model Performance](modelTraining/Resnet_ModelPerformance.ipynb)
+Use [Training Notebook](modelTraining/Resnet_Training.ipynb) and [Model Performance](modelTraining/Resnet_ModelPerformance.ipynb)
 
 ## Setting up the Environment
 
@@ -65,3 +64,34 @@ python flask_api/app.py
 
 
 9) Deployment in HEROKU
+## Configuring HEROKU
+Note: requirement.txt and Procfile are required to be present in the project workspace for Hiroku to identify the initial file that has to run.
+	a) Sign-up for Heroku at https://devcenter.heroku.com/ and agree to all the necessary terms and conditions.
+	b) In the home page click on New -> Create a new app.
+![](images/Heroku_createNew.PNG)
+	c) Enter the app name and click on Create app
+![](images/Heroku_create_app.PNG)
+	d) Selected the selected app
+![](images/Heroku_selectAPP.PNG)
+	e) Select Deploy tab and connect to the github and configure the repository from which the code has to be deployed
+![](images/Heroku_Deploytab.PNG)
+![](images/Heroku_ConnectGithub.PNG)
+![](images/Heroku_ConnectGithub.PNG)
+	f) Select settings and click on Add buildpack and select python
+![](images/Heroku_settingstab.PNG)
+![](images/Heroku_settingstab_buildpack.PNG)
+	e) Goto Deploy tab again and click on to 
+![](images/deployBranch.PNG)
+	f) Click Open app for the app to open.
+
+Note: How to check application logs ??
+Select More --> View Logs
+![](images/applicationLogs.PNG)
+
+	
+
+
+
+
+
+
