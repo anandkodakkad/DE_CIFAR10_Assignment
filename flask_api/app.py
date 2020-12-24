@@ -30,8 +30,11 @@ def make_directory():
 @app.route('/')
 def root():
     # clean the upload directory every time user use the website and create a new empty directory
+	print('In the root directory')
     clean_upload_folder()
+	print('Cleaning the folder')
     make_directory()
+	print('Making Directory')
     return render_template("upload.html")
 
 @app.route("/upload",methods=["POST","GET"])
