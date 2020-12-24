@@ -4,7 +4,7 @@ Resnet on CIFAR10 Image dataset
 
 1) Built Resnet-18 Architecture. 
 2) Trained the model with CIFAR10 dataset
-3) Various experiments were conducted by configuring values of parameters such as Image Augmentation, Normalization, Optimizers and Dropout. The results are available in modelTraining\TrainingExperimentResults.xlsx
+3) Various experiments were conducted by configuring values of parameters such as Image Augmentation, Normalization, Optimizers and Dropout. The results are available in [Model Performance Log](modelTraining\TrainingExperimentResults.xlsx)
 4) The best model with image augmentation, normlization, SGD with dynamic learning rate and dropout(0.25). 
 5) The model was trained for 200 eppoch with the best accuracy of 90.98 on test data.
 6) The following per class accuracy on test data were obtained. 
