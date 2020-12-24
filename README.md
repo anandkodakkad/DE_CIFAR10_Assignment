@@ -20,14 +20,48 @@ Resnet on CIFAR10 Image dataset
 					ship: 0.951
 					truck: 0.935
 	with confusion matrix of :
+	
 		![](images/confusionMatrix.PNG)       
 	
 	Inferences:
 		Ships and automobiles have the highest accuracy amoung all the classes
 		Cats are being misclassified as dogs and vice versa.
 
-7) Project Structure:
+7) Application Information
 
-8) Flask Implementation:
+		## Directory
 
-9) Running in Flask:
+		![](DirectoryStructure.PNG)
+
+		## Training 
+		Run [Inference Notebook file](InferenceNotebook.ipynb)
+		Use ![Training Notebook](modelTraining/Resnet_Training.ipynb) and ![Model Performance](modelTraining/Resnet_ModelPerformance.ipynb)
+
+		## Setting up the Environment
+
+		To setup the environment 
+		```bash
+		python3 -m pip install -U virtualenv # install the virtualenv
+		virtualenv -p python3 dev_env # creating an environment
+		source dev_env/bin/activate # activate environment
+		git clone https://github.com/sayanam/DE_CIFAR10_Assignment #clone the repo
+		cd DE_CIFAR10_Assignment
+		pip install -r requirements.txt # install the requirements
+		```
+
+		## For Inference
+		 To generate validation data run the below code:
+		```bash
+		cd data
+		python generate_valid_data.py
+		```
+
+		## Run application using Flask
+		Run the below command to commence the application
+		```bash
+		python flask_api/app.py
+		```
+8) How to use the application?
+
+
+9) Deployment in HEROKU
