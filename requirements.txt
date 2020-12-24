@@ -1,7 +1,9 @@
+-f https://download.pytorch.org/whl/torch_stable.html
 flask
-torch
-torchvision
+torch==1.7.0+cpu
+torchvision==0.8.1+cpu
 Pillow
 numpy
 tqdm
-
+gunicorn==19.9.0
+requests==2.25.0
